@@ -1,0 +1,124 @@
+hashcat (v6.1.0) starting in benchmark mode...
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+* Device #1: CUDA SDK Toolkit installation NOT detected.
+             CUDA SDK Toolkit installation required for proper device support and utilization
+             Falling back to OpenCL Runtime
+
+* Device #1: WARNING! Kernel exec timeout is not disabled.
+             This may cause "CL_OUT_OF_RESOURCES" or related errors.
+             To disable the timeout, see: https://hashcat.net/q/timeoutpatch
+OpenCL API (OpenCL 1.2 CUDA 11.2.66) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce RTX 3090, 23296/24576 MB (6144 MB allocatable), 82MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#1.........: 62085.0 MH/s (44.12ms) @ Accel:32 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 100 - SHA1
+
+Speed.#1.........: 21400.2 MH/s (64.06ms) @ Accel:16 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 1400 - SHA2-256
+
+Speed.#1.........:  5782.0 MH/s (118.67ms) @ Accel:16 Loops:512 Thr:1024 Vec:1
+
+Hashmode: 1700 - SHA2-512
+
+Speed.#1.........:  2639.9 MH/s (64.88ms) @ Accel:2 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 22000 - WPA-PBKDF2-PMKID+EAPOL (Iterations: 4095)
+
+Speed.#1.........:  1092.0 kH/s (38.25ms) @ Accel:2 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 1000 - NTLM
+
+Speed.#1.........:   101.6 GH/s (26.87ms) @ Accel:32 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 3000 - LM
+
+Speed.#1.........: 67776.0 MH/s (40.27ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+
+Hashmode: 5500 - NetNTLMv1 / NetNTLMv1+ESS
+
+Speed.#1.........: 47845.1 MH/s (57.25ms) @ Accel:32 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 5600 - NetNTLMv2
+
+Speed.#1.........:  4775.9 MH/s (71.80ms) @ Accel:4 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 1500 - descrypt, DES (Unix), Traditional DES
+
+Speed.#1.........:  2512.2 MH/s (68.13ms) @ Accel:32 Loops:1024 Thr:64 Vec:1
+
+Hashmode: 500 - md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5) (Iterations: 1000)
+
+Speed.#1.........: 31486.7 kH/s (82.53ms) @ Accel:32 Loops:1000 Thr:1024 Vec:1
+
+Hashmode: 3200 - bcrypt $2*$, Blowfish (Unix) (Iterations: 32)
+
+Speed.#1.........:    96189 H/s (36.48ms) @ Accel:8 Loops:16 Thr:11 Vec:1
+
+Hashmode: 1800 - sha512crypt $6$, SHA512 (Unix) (Iterations: 5000)
+
+Speed.#1.........:   492.8 kH/s (67.66ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+
+Hashmode: 7500 - Kerberos 5, etype 23, AS-REQ Pre-Auth
+
+Speed.#1.........:  1243.4 MH/s (68.92ms) @ Accel:64 Loops:256 Thr:64 Vec:1
+
+Hashmode: 13100 - Kerberos 5, etype 23, TGS-REP
+
+Speed.#1.........:  1400.8 MH/s (61.20ms) @ Accel:128 Loops:128 Thr:64 Vec:1
+
+Hashmode: 15300 - DPAPI masterkey file v1 (Iterations: 23999)
+
+Speed.#1.........:   192.8 kH/s (72.39ms) @ Accel:4 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 15900 - DPAPI masterkey file v2 (Iterations: 12899)
+
+Speed.#1.........:   110.1 kH/s (58.50ms) @ Accel:2 Loops:512 Thr:1024 Vec:1
+
+Hashmode: 7100 - macOS v10.8+ (PBKDF2-SHA512) (Iterations: 1023)
+
+Speed.#1.........:  1098.1 kH/s (50.53ms) @ Accel:2 Loops:511 Thr:1024 Vec:1
+
+Hashmode: 11600 - 7-Zip (Iterations: 16384)
+
+Speed.#1.........:   822.0 kH/s (94.30ms) @ Accel:4 Loops:4096 Thr:1024 Vec:1
+
+Hashmode: 12500 - RAR3-hp (Iterations: 262144)
+
+Speed.#1.........:   116.9 kH/s (44.77ms) @ Accel:1 Loops:16384 Thr:1024 Vec:1
+
+Hashmode: 13000 - RAR5 (Iterations: 32799)
+
+Speed.#1.........:   119.6 kH/s (87.55ms) @ Accel:8 Loops:512 Thr:1024 Vec:1
+
+Hashmode: 6211 - TrueCrypt RIPEMD160 + XTS 512 bit (Iterations: 1999)
+
+Speed.#1.........:   587.0 kH/s (66.63ms) @ Accel:8 Loops:128 Thr:1024 Vec:1
+
+Hashmode: 13400 - KeePass 1 (AES/Twofish) and KeePass 2 (AES) (Iterations: 24569)
+
+Speed.#1.........:    86791 H/s (161.09ms) @ Accel:4 Loops:1024 Thr:1024 Vec:1
+
+Hashmode: 6800 - LastPass + LastPass sniffed (Iterations: 499)
+
+Speed.#1.........:  6772.0 kH/s (77.44ms) @ Accel:32 Loops:124 Thr:1024 Vec:1
+
+Hashmode: 11300 - Bitcoin/Litecoin wallet.dat (Iterations: 200459)
+
+Speed.#1.........:    13751 H/s (62.28ms) @ Accel:4 Loops:512 Thr:1024 Vec:1
+
+Started: Tue Dec 22 16:41:07 2020
+Stopped: Tue Dec 22 16:44:20 2020
